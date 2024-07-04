@@ -1,0 +1,9 @@
+{
+  "hidden_act": "gelu", 
+  "hidden_dropout_prob": 0.2,
+  "kernel_sizes": [2, 3, 4, 5],
+  "num_filters": 128,
+  "embedding_size": 128,
+  "initializer_range": 0.02,
+  "vocab_size": 21128
+}

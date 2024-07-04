@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+</head>
+<body>
+    <h1>User Info</h1>
+    {% if room_info %}
+    <h2>Your User ID: {{ user_id }}</h2>
+    <h3>Personal Information:</h3>
+<!--    <form method="POST">-->
+<!--        <label for="info_key">Info Key:</label>-->
+<!--        <input type="text" id="info_key" name="info_key" value="info_key" required>-->
+<!--        <label for="info_value">Info Value:</label>-->
+<!--        <input type="text" id="info_value" name="info_value" value="info_value" required>-->
+<!--        <button type="submit">Update Info</button>-->
+<!--    </form>-->
+    <ul>
+        {% for key, value in room_info.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <form method="POST">
+        <button type="submit">Generate User ID</button>
+    </form>
+    {% endif %}
+</body>
+</html>

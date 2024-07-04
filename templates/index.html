@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder</title>
+    <!-- 引入外部 CSS 文件 -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<h1>智能照明系统</h1>
+    <div class="line-container">
+        <button id="recordButton">开始录音</button>
+        <button id="stopButton" disabled>停止录音</button>
+        <audio id="audioPlayback" controls></audio>
+        <textarea id="transcript" 房间信息></textarea>
+    </div>
+    <div class="grid-container" id="photo-grid">
+        <img id="living_room" src="{{ living_room_image_path }}" alt="photo1">
+        <img id="bedroom" src="{{ bedroom_image_path }}" alt="photo2">
+        <img id="bathroom" src="{{ bathroom_image_path}}" alt="photo3">
+        <img id="dining_room" src="{{ dining_room_image_path }}" alt="photo4">
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

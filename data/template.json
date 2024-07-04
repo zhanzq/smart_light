@@ -1,0 +1,40 @@
+{
+    "Lamp": {
+        "countDown": [
+            "{<time>}[之以]?后{<open>}{<room>}的?{<lamp>}",
+            "{<room>}的?{<lamp>}{<time>}[之以]?后{<open>}",
+            "{<time>}[之以]?后{<open>}{<lamp>}",
+            "{<time>}[之以]?后{<close>}{<room>}的?{<lamp>}",
+            "{<room>}的?{<lamp>}{<time>}[之以]?后{<close>}",
+            "{<time>}[之以]?后{<close>}{<lamp>}"
+        ],
+        "openDevice": [
+            "{<open>}{<room>}?的?{<lamp>}",
+            "{<room>}的?{<lamp>}{<open>}"
+        ],
+        "closeDevice": [
+            "{<close>}{<room>}?的?{<lamp>}",
+            "{<room>}?的?{<lamp>}{<close>}"
+        ],
+        "increaseLightness": [
+            "{<room>}?的?{<lamp>}?的?亮度{<increase>}",
+            "{<increase>}{<room>}?的?{<lamp>}?的?亮度",
+            "{<room>}?的?{<lamp>}?{<be_light>}"
+        ],
+        "decreaseLightness": [
+            "{<room>}?的?{<lamp>}?的?亮度{<decrease>}(一些|一点)?",
+            "{<decrease>}{<room>}?的?{<lamp>}?的?亮度",
+            "{<room>}?的?{<lamp>}?{<be_dark>}"
+        ],
+        "setLightness": [
+            "{<room>}?的?{<lamp>}?的?亮度{<set_to>}{<lightness>}",
+            "{<lamp>}?{<set_to>}{<lightness>}"
+        ],
+        "setMode": [
+            "{<room>}?的?{<lamp>}?{<set_to>}{<mode>}(模式|状态)?",
+            "{<set>}{<room>}?的?{<lamp>}{<to>}{<mode>}(模式)?",
+            "{<set>}{<lamp>}{<to>}{<mode>}(模式)?",
+            "{<set>}?{<mode>}(模式)?"
+        ]
+    }
+}

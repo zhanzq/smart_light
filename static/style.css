@@ -1,0 +1,43 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0; /* 无间隙 */
+    height: 80vh; /* 高度占据页面80% */
+    width: 80vw; /* 宽度占据页面80% */
+}
+.line-container {
+    display: inline;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0; /* 无间隙 */
+    height: 80vh; /* 高度占据页面80% */
+    width: 80vw; /* 宽度占据页面80% */
+}
+.grid-container img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover; /* 保持图片的比例 */
+}
+
+button {
+    /*padding: 10px 20px;*/
+    /*background-color: #007bff;*/
+    /*color: white;*/
+    /*border: none;*/
+    cursor: pointer;
+}
+
+/*button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
