@@ -21,7 +21,7 @@ class DemoError(Exception):
 
 
 def do_asr(speech_path):
-    token = "24.390439a32cb6eba88fbd4ba8d5458fd6.2592000.1722496624.282335-16515363"
+    token = json.load(open("config.json")).get("token")
     speech_data = []
     with open(speech_path, 'rb') as speech_file:
         speech_data = speech_file.read()
