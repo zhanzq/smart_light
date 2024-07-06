@@ -30,6 +30,15 @@ body, html {
     object-fit: cover; /* 保持图片的比例 */
 }
 
+.text-overlay {
+    position: relative;
+    /*transform: translate(-50%, -50%);*/
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 button {
     /*padding: 10px 20px;*/
     /*background-color: #007bff;*/

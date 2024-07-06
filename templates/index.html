@@ -16,10 +16,23 @@
         <textarea id="transcript" 房间信息></textarea>
     </div>
     <div class="grid-container" id="photo-grid">
-        <img id="living_room" src="{{ living_room_image_path }}" alt="photo1">
-        <img id="bedroom" src="{{ bedroom_image_path }}" alt="photo2">
-        <img id="bathroom" src="{{ bathroom_image_path}}" alt="photo3">
-        <img id="dining_room" src="{{ dining_room_image_path }}" alt="photo4">
+        <div>
+            <img id="living_room" src="{{ living_room_image_path }}" alt="photo1">
+            <div class="text-overlay" style="top:-90%;left:2%;">客厅</div>
+        </div>
+        <div>
+            <img id="bedroom" src="{{ bedroom_image_path }}" alt="photo2">
+            <div class="text-overlay" style="top:-90%;left:2%;">卧室</div>
+        </div>
+        <div>
+            <img id="bathroom" src="{{ bathroom_image_path}}" alt="photo3">
+            <div class="text-overlay" style="top:-90%;left:2%;">卫生间</div>
+        </div>
+        <div>
+            <img id="dining_room" src="{{ dining_room_image_path }}" alt="photo4">
+            <div class="text-overlay" style="top:-90%;left:2%;">餐厅</div>
+        </div>
+
     </div>
 
     <script src="/static/script.js"></script>
