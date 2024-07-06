@@ -1,7 +1,8 @@
 {
     "Lamp": {
         "countDown": [
-            "{<time>}[之以]?后{<open>}{<room>}的?{<lamp>}",
+            "{<time>}[之以]?后{<open>}{<room>}?的?{<lamp>}",
+            "{<time>}[之以]?后把?{<room>}?的?{<lamp>}{<open>}",
             "{<room>}的?{<lamp>}{<time>}[之以]?后{<open>}",
             "{<time>}[之以]?后{<open>}{<lamp>}",
             "{<time>}[之以]?后{<close>}{<room>}的?{<lamp>}",
@@ -9,6 +10,7 @@
             "{<time>}[之以]?后{<close>}{<lamp>}"
         ],
         "openDevice": [
+            "{<room>}{<open>}{<lamp>}",
             "{<open>}{<room>}?的?{<lamp>}",
             "{<room>}的?{<lamp>}{<open>}"
         ],
