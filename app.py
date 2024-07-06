@@ -21,13 +21,17 @@ def get_user_id():
         session["login_time"] = time.ctime()
     user_id = str(hash(session['login_time']))[-6:]
 
-    if "user_info" not in session:
-        session["user_info"] = {user_id: {}}
-
-    if user_id not in session["user_info"]:
-        session["user_info"][user_id] = {}
-    if "room_info" not in session["user_info"][user_id]:
-        session["user_info"][user_id]["room_info"] = RoomInfo.get_instance()
+    # if "user_info" not in session:
+    #     session["user_info"] = {user_id: {}}
+    #
+    # if user_id not in session["user_info"]:
+    #     session["user_info"][user_id] = {}
+    # if "room_info" not in session["user_info"][user_id]:
+    #     session["user_info"][user_id]["room_info"] = RoomInfo.get_instance()
+    user_info = session.get("user_info", {})
+    if user_id not in user_info:
+        user_info[user_id] = {"room_info": RoomInfo.get_instance()}
+        session.update({"user_info": user_info})
 
     return user_id
 
@@ -141,6 +145,7 @@ def print_user_info():
 @app.route("/all_user_info")
 def print_all_user_info():
     all_user_info = get_user_info()
+    print("all_user_info", json.dumps(all_user_info, indent=4, ensure_ascii=False))
     return render_template("all_user_info.html", all_user_info=all_user_info)
 
 
